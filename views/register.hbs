@@ -1,0 +1,53 @@
+    <h1>blood registration  form</h1>
+    <form action="/register/submit" method="POST">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="0" required>
+        </div>
+        <div>
+            <label for="location">place:</label>
+            <input type="text" id="loc" name="place"  required>
+        </div>
+        <div>
+            <label for="blood group">blood group:</label>
+            <input type="text" id="blood group" name="blood group" required>
+        </div>
+
+
+
+              <div id='phone'>
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+    </div>
+    
+
+    <div class="gender-toggle">
+        <label class="gender-option">
+            <input type="radio" name="gender" value="male" checked onclick="updateGender()"> Male
+        </label>
+        <label class="gender-option">
+            <input type="radio" name="gender" value="female" onclick="updateGender()"> Female
+        </label>
+    </div>
+
+    <input type="hidden" id="selectedGender" name="selectedGender" value="male">
+   
+
+
+
+
+
+
+    
+        <div>
+            <button  type="submit">Submit</button>
+        </div>
+    </form>

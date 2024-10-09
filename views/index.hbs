@@ -1,0 +1,46 @@
+
+<header>
+    <div class="logo">
+        <h1>Blood Donation Site</h1>
+    </div>
+    <nav>
+        <ul class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><input type="text" placeholder="Search..." class="search-button"></li>
+            <li><a href="/admin" class="admin-button">Admin</a></li>
+            <li></li>
+        </ul>
+    </nav>
+</header>
+
+<form action="/register" method="get">
+  <button type="submit" class="register-button">Register Now</button>
+</form>
+
+
+
+    <section class="support">
+        <h3>Support</h3>
+        <a href="/faq">FAQs</a>
+        <button>Contact Support</button>
+        <a href="/volunteer">Volunteer Opportunities</a>
+    </section>
+
+    <section class="community-impact">
+        <h3>Community Impact</h3>
+        <p>Lives Saved Through Donations: {{communityImpact.livesSaved}}</p>
+    </section>
+
+    <section class="testimonials">
+        <h3>User Testimonials</h3>
+        {{#each testimonials}}
+            <blockquote>{{this}}</blockquote>
+        {{/each}}
+    </section>
+</main>
+
+<footer>
+    <p><a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a></p>
+    <p>&copy; {{year}} Blood Donation Site</p>
+</footer>
